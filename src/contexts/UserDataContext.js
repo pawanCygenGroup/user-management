@@ -22,6 +22,7 @@ export const UserDataContextProvider = ({ children }) => {
     const userService = new UserService()
     useEffect(() => {
         loadUserList()
+        // eslint-disable-next-line
     }, [ ] )
     const loadUserList = (pageNumber) => {
         userService.getUsers(pageNumber).then(response => {
