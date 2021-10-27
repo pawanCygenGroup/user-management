@@ -15,7 +15,8 @@ class UserService extends BaseService {
         const userData = {
             first_name: userDetails.first_name,
             last_name: userDetails.last_name,
-            email: userDetails.email
+            email: userDetails.email,
+            avatar: userDetails.avatar
         }
         return this.post(`/users/`,userData).then(response => {
             return response

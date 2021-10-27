@@ -45,7 +45,6 @@ export const UserDataContextProvider = ({ children }) => {
     }
     const updateUserDetails = (userData) => {
         userService.updateUser(userData).then(response => {
-            console.log(response,'oooo')
             if (response.status === 200) {
                 setNotificationData({ message: 'User details updated successfully' })
                 }
